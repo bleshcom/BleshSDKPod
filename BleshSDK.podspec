@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = 'BleshSDK'
-  s.version      = '3.2.1'
+  s.version      = '3.2.2'
   s.summary      = 'iOS library for Blesh iBeacon devices'
   s.description  = 'iOS library for Blesh iBeacon devices. Please refer to our documentation for details.'
   s.homepage     = 'http://blesh.com'
   s.author       = { "Blesh, Inc" => "contact@blesh.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.2.1" }
+  s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.2.2" }
   #s.source_files =  'BleshSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'BleshSDK.framework'
   s.frameworks = 'AdSupport', 'AudioToolBox', 'SystemConfiguration', 'Accelerate', 'CoreLocation', 'CoreBluetooth', 'CoreTelephony'
@@ -19,4 +19,6 @@ Pod::Spec.new do |s|
       Copyright 2013 Blesh, Inc. All rights reserved.
       LICENSE
   }
+
+  s.documentation_url = 'https://github.com/bleshinc/docs-v3/wiki/iOS-integration'
 end
