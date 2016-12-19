@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.author       = { "Blesh, Inc" => "contact@blesh.com" }
   s.platform     = :ios
   s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.2.1" }
-  s.source_files =  'BleshSDK.framework/Headers/*.h'
-  s.vendored_frameworks = 'EstimoteSDK.framework'
+  #s.source_files =  'BleshSDK.framework/Headers/*.h'
+  s.vendored_frameworks = 'BleshSDK.framework'
   s.ios.deployment_target = '7.0'
   s.frameworks = 'AdSupport', 'AudioToolBox', 'SystemConfiguration', 'Accelerate', 'CoreLocation', 'CoreBluetooth'
   s.requires_arc = true
