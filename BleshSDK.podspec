@@ -25,6 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+
+                   Blesh iOS Framework 
+
                    DESC
 
   s.homepage     = "https://github.com/bleshinc/docs-v3/wiki/iOS-integration"
@@ -84,7 +87,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # s.source       = { :git => "http://EXAMPLE/BleshSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.2.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
