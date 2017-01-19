@@ -5,7 +5,6 @@
 //  Created by Blesh on 27.12.2013.
 //  Copyright (c) 2013 Blesh. All rights reserved.
 //
-//  SDK Version : 3.2
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
@@ -40,9 +39,6 @@
                 integrationId:(NSString *) integrationId
                     pushToken:(NSString *) pushToken
                   optionalKey:(NSString *) optionalKey;
-
-- (void) initBleshWithAPIUser:(NSString *) APIUser
-                       APIKey:(NSString *) APIKey;
 
 
 - (void) requestNotificationPermission;

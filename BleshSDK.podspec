@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = 'BleshSDK'
-  s.version      = '3.2.5.0'
+  s.version      = '2.6'
   s.summary      = 'iOS library for Blesh iBeacon devices'
   s.description  = 'iOS library for Blesh iBeacon devices. Please refer to our documentation for details.'
   s.homepage     = 'http://blesh.com'
   s.author       = { "Blesh, Inc" => "contact@blesh.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.2.5.0" }
+  s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "2.6", :branch => "Temp" }
   s.source_files =  'BleshSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'BleshSDK.framework'
   s.frameworks = 'AudioToolBox', 'SystemConfiguration', 'Accelerate', 'CoreLocation', 'CoreBluetooth', 'CoreTelephony'
