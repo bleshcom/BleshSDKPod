@@ -5,7 +5,7 @@
 //  Created by Blesh on 27.12.2013.
 //  Copyright (c) 2013 Blesh. All rights reserved.
 //
-//  SDK Version : 3.2
+//  SDK Version : 3.2.10
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
