@@ -11,10 +11,10 @@
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
-#import <SafariServices/SafariServices.h>
+//#import <SafariServices/SafariServices.h>
 #import <UserNotifications/UserNotifications.h>
 
-@interface Blesh : NSObject <CLLocationManagerDelegate,UIApplicationDelegate, CBPeripheralManagerDelegate, SFSafariViewControllerDelegate >
+@interface Blesh : NSObject <CLLocationManagerDelegate,UIApplicationDelegate, CBPeripheralManagerDelegate >
 
 + (Blesh *) sharedInstance;
 
