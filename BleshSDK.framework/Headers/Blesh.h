@@ -5,14 +5,16 @@
 //  Created by Blesh on 27.12.2013.
 //  Copyright (c) 2013 Blesh. All rights reserved.
 //
-//  SDK Version : 3.2.10
+//  SDK Version : 3.4
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+//#import <SafariServices/SafariServices.h>
+#import <UserNotifications/UserNotifications.h>
 
-@interface Blesh : NSObject <CLLocationManagerDelegate,UIApplicationDelegate, CBPeripheralManagerDelegate>
+@interface Blesh : NSObject <CLLocationManagerDelegate,UIApplicationDelegate, CBPeripheralManagerDelegate >
 
 + (Blesh *) sharedInstance;
 
@@ -41,16 +43,10 @@
                     pushToken:(NSString *) pushToken
                   optionalKey:(NSString *) optionalKey;
 
-- (void) initBleshWithAPIUser:(NSString *) APIUser
-                       APIKey:(NSString *) APIKey;
+
+- (void) bleshReceivedLocalNotification         :(UILocalNotification *) notification;
+- (void) bleshReceivedUNNotification            :(UNNotification *) notification;
+- (void) bleshPerformFetchWithCompletionHandler :(void (^)(UIBackgroundFetchResult))completionHandler;
 
 
-- (void) requestNotificationPermission;
-- (void) requestLocationPermission;
-- (void) startBlesh;
-- (void) stopBlesh;
-
-
-- (void) bleshReceivedLocalNotification:(UILocalNotification *) notification;
-- (void) bleshPerformFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 @end
