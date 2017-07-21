@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/bleshcom/BleshSDKPod.git", :tag => "3.4.0.0" }
   s.source_files =  'BleshSDK.framework/Headers/*.h'
   s.vendored_frameworks = 'BleshSDK.framework'
-  s.frameworks = 'AudioToolBox', 'SystemConfiguration', 'Accelerate', 'CoreLocation', 'CoreBluetooth', 'CoreTelephony'
+  s.frameworks = 'AudioToolBox', 'SystemConfiguration', 'Accelerate', 'CoreLocation', 'CoreBluetooth', 'CoreTelephony', 'UserNotifications'
   s.requires_arc = true
   #s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/BleshSDK"',
                   #'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Headers/BleshSDK"' }
