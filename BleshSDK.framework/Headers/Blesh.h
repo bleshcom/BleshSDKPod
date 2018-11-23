@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.0.0
+ * @version    4.0.1
  * @link https://www.blesh.com
  * @copyright © 2018 Blesh. All rights reserved.
  */
@@ -40,7 +40,7 @@ __IOS_AVAILABLE(8.0)
  * @code
  *
  * // with Integration Id and Optional Key
- * [[[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] optionalKey: @"BleshOptinalKey"] initBlesh];
+ * [[[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] optionalKey: @"BleshOptionalKey"] initBlesh];
  *
  * // with one of them
  * [[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] initBlesh];
@@ -53,7 +53,7 @@ __IOS_AVAILABLE(8.0)
  * @code
  *
  * // with Integration Id and Optional Key
- * Blesh.sharedInstance().integrationId("BleshIntegrationId").optionalKey("BleshOptinalKey").initBlesh()
+ * Blesh.sharedInstance().integrationId("BleshIntegrationId").optionalKey("BleshOptionalKey").initBlesh()
  *
  * // with one of them
  * Blesh.sharedInstance().integrationId("BleshIntegrationId").initBlesh()
