@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.0.2
+ * @version    4.0.3
  * @link https://www.blesh.com
  * @copyright © 2018 Blesh. All rights reserved.
  */
@@ -74,9 +74,9 @@ __IOS_AVAILABLE(8.0)
  *
  * func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void)
  *
- * func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
  */
-- (void) bleshReceivedUNNotification            :(UNNotification *) notification NS_AVAILABLE_IOS(10_0);
+
+- (void) bleshReceivedUNNotificationResponse:(UNNotificationResponse *) response NS_AVAILABLE_IOS(10_0);
 
 
 /**
