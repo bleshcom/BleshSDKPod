@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.0.3
+ * @version    4.0.4
  * @link https://www.blesh.com
  * @copyright © 2018 Blesh. All rights reserved.
  */
