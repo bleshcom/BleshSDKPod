@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.0.5
+ * @version    4.0.6
  * @link https://www.blesh.com
  * @copyright © 2019 Blesh. All rights reserved.
  */
@@ -13,6 +13,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import <UserNotifications/UserNotifications.h>
+#import "BleshConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 __IOS_AVAILABLE(8.0)
@@ -64,6 +65,27 @@ __IOS_AVAILABLE(8.0)
  *
  */
 - (void) initBlesh;
+
+/**
+ * @brief This methods can configure Blesh SDK. It is not a mandatory function.
+ * @discussion Objective-C
+ * @code
+ *
+ * BleshConfig* configuration = [[BleshConfig alloc] initWithAdsEnabled: true];
+ * [Blesh.sharedInstance configure: configuration];
+ * @endcode
+ *
+ * Swift
+ * @code
+ *
+ * let configuration = BleshConfig(adsEnabled: false)
+ * Blesh.sharedInstance().configure(configuration)
+ *
+ * @endcode
+ *
+ */
+
+- (void) configure: (BleshConfig*) configuration;
 
 // BleshSDK needs to be notified about incoming notification interactions.
 
