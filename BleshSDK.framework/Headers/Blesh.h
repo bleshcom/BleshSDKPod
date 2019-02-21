@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.0.6
+ * @version    4.0.7
  * @link https://www.blesh.com
  * @copyright © 2019 Blesh. All rights reserved.
  */
@@ -64,7 +64,28 @@ __IOS_AVAILABLE(8.0)
  * @endcode
  *
  */
-- (void) initBlesh;
+
+- (void) initBlesh: (void(^)(BOOL success))completion;
+
+/**
+ * @brief This methods needs to call when user changed location permission.
+ *
+ * @discussion Objective-C
+ *
+ * the following method must be implemented on:
+ *
+ * (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+ *
+ */
+ - (void) locationManagerDidChangeAuthorizationStatus: (CLAuthorizationStatus) authorizationStatus;
+
+/**
+ * @brief This methods needs to call when user changed notification permission.
+ *
+ * @discussion Objective-C
+ *
+ */
+ - (void) userNotificationStatusChanged;
 
 /**
  * @brief This methods can configure Blesh SDK. It is not a mandatory function.
