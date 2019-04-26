@@ -3,7 +3,7 @@
  * @brief  BleshSDK
  * @author Anıl TAŞKIRAN
  *
- * @version    4.1.0
+ * @version    4.1.1
  * @link https://www.blesh.com
  * @copyright © 2019 Blesh. All rights reserved.
  */
@@ -41,26 +41,38 @@ __IOS_AVAILABLE(8.0)
  * @code
  *
  * // with Integration Id and Optional Key
- * [[[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] optionalKey: @"BleshOptionalKey"] initBlesh];
+ * [[[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] optionalKey: @"BleshOptionalKey"] initBlesh:^(BOOL success) {
+ 
+ }];
  *
  * // with one of them
- * [[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] initBlesh];
+ * [[[Blesh sharedInstance] integrationId: @"BleshIntegrationId"] initBlesh:^(BOOL success) {
+ 
+ }];
  *
  * // none of them
- * [[Blesh sharedInstance] initBlesh];
+ * [[Blesh sharedInstance] initBlesh:^(BOOL success) {
+ 
+ }];
  * @endcode
  *
  * Swift
  * @code
  *
  * // with Integration Id and Optional Key
- * Blesh.sharedInstance().integrationId("BleshIntegrationId").optionalKey("BleshOptionalKey").initBlesh()
+ * Blesh.sharedInstance().integrationId("BleshIntegrationId").optionalKey("BleshOptionalKey").initBlesh { (result) in
+    NSLog("blesh result \(result)")
+ }
  *
  * // with one of them
- * Blesh.sharedInstance().integrationId("BleshIntegrationId").initBlesh()
+ * Blesh.sharedInstance().integrationId("BleshIntegrationId").initBlesh { (result) in
+    NSLog("blesh result \(result)")
+ }
  *
  * // none of them
- * Blesh.sharedInstance().initBlesh()
+ * Blesh.sharedInstance().initBlesh { (result) in
+    NSLog("blesh result \(result)")
+ }
  * @endcode
  *
  */
